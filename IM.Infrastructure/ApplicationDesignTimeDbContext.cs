@@ -13,7 +13,7 @@ namespace IM.Infrastructure
         public ApplicationDbContext CreateDbContext(string[] args)
         {
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseSqlServer("Server=DESKTOP-AN5OC4E\\SQLEXPRESS; Database=Company;Integrated Security=True;TrustServerCertificate=True;Encrypt=False;")
+                .UseSqlServer("Server=DESKTOP-AN5OC4E\\SQLEXPRESS; Database=Store;Integrated Security=True;TrustServerCertificate=True;Encrypt=False;")
                 .Options;
 
             return new ApplicationDbContext(options);

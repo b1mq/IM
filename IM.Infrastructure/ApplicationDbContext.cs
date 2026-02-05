@@ -14,11 +14,12 @@ namespace IM.Infrastructure
         //public DbSet<HRDepartment> HRDepartments { get; set; }
         //public DbSet<FinanceDepartment> FinanceDepartments { get; set; }
         //public DbSet<SalaryRecord> SalaryRecords { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Basket> Baskets { get; set; }
-        public DbSet<BasketItem> BasketItems { get; set; }
-        public DbSet<PromoCode> Promocodes { get; set; }
-        public DbSet<User> Users {  get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<Basket> Basket { get; set; }
+        public DbSet<BasketItem> BasketItem{ get; set; }
+        public DbSet<PromoCode> Promocode { get; set; }
+        public DbSet<User> User {  get; set; }
+        public DbSet<Category> Category {  get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
     }

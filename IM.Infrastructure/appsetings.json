@@ -1,5 +1,5 @@
 ﻿{
     "ConnectionStrings": {
-        "DatabaseConnection": "Server=DESKTOP-AN5OC4E\\SQLEXPRESS; Database=Company;Integrated Security=True;TrustServerCertificate=True;Encrypt=False;"
+        "DatabaseConnection": "Server=DESKTOP-AN5OC4E\\SQLEXPRESS; Database=Store;Integrated Security=True;TrustServerCertificate=True;Encrypt=False;"
     }
 }
