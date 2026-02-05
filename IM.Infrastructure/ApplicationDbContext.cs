@@ -18,6 +18,7 @@ namespace IM.Infrastructure
         public DbSet<Basket> Basket { get; set; }
         public DbSet<BasketItem> BasketItem{ get; set; }
         public DbSet<PromoCode> Promocode { get; set; }
+        public DbSet<Order> Order { get; set; }
         public DbSet<User> User {  get; set; }
         public DbSet<Category> Category {  get; set; }
 
