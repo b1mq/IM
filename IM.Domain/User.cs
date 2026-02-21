@@ -8,6 +8,7 @@
         public string Password { get; set; }
 
         public ICollection<Basket> Baskets { get; set; } = new List<Basket>();
+        public ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 
 }

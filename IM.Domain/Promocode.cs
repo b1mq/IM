@@ -13,5 +13,6 @@ namespace IM.Domain
 
         public decimal DiscountValue { get; set; } 
         public bool IsPercent { get; set; }
+        public ICollection<Basket> Baskets { get; set; }
     }
 }

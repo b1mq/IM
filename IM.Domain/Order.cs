@@ -9,14 +9,17 @@ namespace IM.Domain
     public class Order
     {
         public int Id { get; set; }
-        public int OrderId { get; set; }
+
         public int BasketId { get; set; }
-        public ICollection<Basket> Baskets { get; set; } = new List<Basket>();
+        public Basket Basket { get; set; }
+
         public int UserId { get; set; }
-        public ICollection<User> Users { get; set; } = new List<User>();
-        public bool isPayed { get; set; }
-        public bool isRefunded { get; set; }
+        public User User { get; set; }
+
+        public bool IsPaid { get; set; }
+        public bool IsRefunded { get; set; }
         public string PaymentMethod { get; set; }
 
+        public DateTime CreatedAt { get; set; }
     }
 }

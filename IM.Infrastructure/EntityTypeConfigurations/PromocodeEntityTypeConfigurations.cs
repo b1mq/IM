@@ -12,9 +12,9 @@ namespace IM.Infrastructure.EntityTypeConfigurations
     {
         public void Configure(EntityTypeBuilder<PromoCode> builder)
         {
-            // ключ
+            
             builder.HasKey(p => p.Id);
-            builder.Property(p => p.Id ).ValueGeneratedOnAdd(); // автоинкремент PK
+            builder.Property(p => p.Id ).ValueGeneratedOnAdd();
             builder.Property(p => p.Code)
                 .IsRequired()
                 .HasMaxLength(30);
